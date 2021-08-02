@@ -20,16 +20,16 @@ class Address {
   Address.fromJson(String source) {
     var jsonAux = json.decode(source);
     // map{string:}
-    this._cep = jsonAux["cep"];
-    this._logradouro = jsonAux["logradouro"];
-    this._complemento = jsonAux["complemento"];
-    this._bairro = jsonAux["bairro"];
-    this._localidade = jsonAux["localidade"];
-    this._uf = jsonAux["uf"];
-    this._ibge = int.parse(jsonAux["ibge"]);
-    this._gia = jsonAux["gia"];
-    this._ddd = int.parse(jsonAux["ddd"]);
-    this._siafi = int.parse(jsonAux["siafi"]);
+    this._cep = jsonAux['cep'];
+    this._logradouro = jsonAux['logradouro'];
+    this._complemento = jsonAux['complemento'];
+    this._bairro = jsonAux['bairro'];
+    this._localidade = jsonAux['localidade'];
+    this._uf = jsonAux['uf'];
+    this._ibge = int.parse(jsonAux['ibge']);
+    this._gia = jsonAux['gia'];
+    this._ddd = int.parse(jsonAux['ddd']);
+    this._siafi = int.parse(jsonAux['siafi']);
   }
 
   //para pegar os valores por serem privados
